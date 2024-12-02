@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" href="CSS/nikocurriculum.css">
+</head>
+<body>
+    <div class="curriculum-container">
+        <!-- Contenidor per a la foto a l'esquerra -->
+        <div class="header">
+            <div class="photo-container">
+                <img src="imatges/Nosaltres/imatge niko.jpg" alt="Foto Nikolay Emilov">
+            </div>
+            <div class="info-contact">
+                <h1>Nikolay Emilov</h1>
+                <p>Email: 2024_nikolay.emilov@iticbcn.cat | Telèfon: +34 657 114 611</p>
+                <p>Adreça: Carrer Pujades, 249, Barcelona</p>
+            </div>
+        </div>
+
+        <section class="sobre-mi">
+            <h2>Sobre mi</h2>
+            <p>
+                Sóc un persona amb una gran passió per la programació i el desenvolupament web. 
+                Tinc habilitats en diversos llenguatges i eines tecnològiques i sempre busco nous reptes per aprendre i créixer.
+            </p>
+        </section>
+
+        <section class="estudis">
+            <h2>Estudis</h2>
+            <table>
+                <caption>Formació Acadèmica</caption>
+                <thead>
+                    <tr>
+                        <th>Període</th>
+                        <th>Nivell</th>
+                        <th>Centre</th>
+                        <th>Localització</th>
+                        <th>Comentaris</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">2018 - 2022</td>
+                        <td rowspan="2">ESO</td>
+                        <td>Institut Icària</td>
+                        <td>Barcelona</td>
+                        <td rowspan="2">Excel·lents resultats acadèmics</td>
+                    </tr>
+                    <tr>
+                        <td>Projecte de tecnologia</td>
+                        <td>Barcelona</td>
+                    </tr>
+                    <tr>
+                        <td>2022 - 2024</td>
+                        <td>Batxillerat Tecnològic</td>
+                        <td>Institut Icària</td>
+                        <td>Barcelona</td>
+                        <td>Especialització en informàtica</td>
+                    </tr>
+                    <tr>
+                        <td>2024</td>
+                        <td colspan="2">Curs de Desenvolupament Web</td>
+                        <td>Online</td>
+                        <td>Autoaprenentatge</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+        <section class="projectes">
+            <h2>Projectes</h2>
+            <table>
+                <caption>Projectes destacats</caption>
+                <thead>
+                    <tr>
+                        <th>Nom del Projecte</th>
+                        <th>Descripció</th>
+                        <th>Tecnologies Utilitzades</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Web de sèrie e televisió (2020)</td>
+                        <td>Crea una pàgina personal</td>
+                        <td>HTML, CSS</td>
+                    </tr>
+                    <tr>
+                        <td>Optimització de disseny</td>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>Aplicació de Gestió (2022)</td>
+                        <td>Gestió de tasques i esdeveniments</td>
+                        <td>Python, Flask</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">E-commerce (2024)</td>
+                        <td>Venda de productes</td>
+                        <td>React, MongoDB</td>
+                    </tr>
+                    <tr>
+                        <td>Pagament segur</td>
+                        <td>Stripe API</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #d1e8e4, #ffffff);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+
+        .curriculum-container {
+            background-color: #ffffff; 
+            border: 1px solid #97c4b8; 
+            border-radius: 10px;
+            padding: 20px;
+            width: 80%;
+            max-width: 900px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .photo-container {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 20px;
+        }
+
+        .photo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info-contact h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #347474;
+        }
+
+        .info-contact p {
+            margin: 5px 0;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #347474;
+            color: #347474;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        table caption {
+            font-weight: bold;
+            color: #347474;
+            margin-bottom: 5px;
+        }
+
+        table th, table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #eaf2f2;
+        }
+
+        @media (max-width: 768px) {
+            .curriculum-container {
+                width: 100%;
+                margin: 10px;
+            }
+
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .photo-container {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</body>
+</html>

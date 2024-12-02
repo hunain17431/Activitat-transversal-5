@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum Vitae</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px salmon;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+   
+        .photo-box {
+            width: 120px;
+            height: 120px;
+            background-image: url('/imatges/Nosaltres/hunain.jpg'); 
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+            margin-bottom: 20px; 
+        }
+
+        caption{
+            margin-bottom: 20px;
+            padding-top: 30px;
+            color: black;
+
+        }
+
+        /* Estilo del título */
+        h1 {
+            font-size: 36px;
+            color: salmon;
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        /* Estilo de las cabeceras */
+        th {
+            background-color: salmon;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            padding-bottom: 16px;
+        }
+
+        td, th {
+            padding: 12px;
+            text-align: left;
+            color:black;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+    
+        .about-table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse; 
+        }
+
+        .studies-table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse; 
+        }
+
+
+        .projects-table {
+            width: 100%;
+            margin-bottom: 30px;
+            border-collapse: collapse; 
+        }
+
+        .about-table td, .studies-table td, .projects-table td {
+            font-size: 18px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start; 
+            width: 100%;
+        }
+
+
+        .left-column {
+            flex: 0 0 150px;
+            text-align: center;
+            margin-right: 30px;
+        }
+
+        .right-column {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content-wrapper">
+
+            <div class="left-column">
+                <div class="photo-box"></div>
+            </div>
+
+
+            <div class="right-column">
+
+                <h1>CURRÍCULUM</h1>
+
+                <table class="about-table">
+                    <caption><strong>SOBRE MI</strong></caption>
+                    <tr>
+                        <td>Nom</td>
+                        <td colspan="2">Hunain Mukhtar</td>
+                    </tr>
+                    <tr>
+                        <td>Telèfon</td>
+                        <td colspan="2">+34 612 345 678</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td colspan="2">mukhtarhunain7@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Adreça</td>
+                        <td colspan="2">Carrer del PERE IV, 10, Barcelona</td>
+                    </tr>
+                </table>
+
+
+                <table class="studies-table">
+                    <caption><strong>ESTUDIS</strong></caption>
+                    <tr>
+                        <th>Estudi</th>
+                        <th>Institut</th>
+                        <th>Data d'inici</th>
+                        <th>Data de finalització</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">ESO I Batxillerat Tecnològic</td>
+                        <td>Institut Icària (ESO)</td>
+                        <td>2016</td>
+                        <td>2020</td>
+                    </tr>
+                    <tr>
+                        <td>Institut Icària (BATXILLERAT)</td>
+                        <td>2020</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>Grau superior en Disseny de Webs</td>
+                        <td>Institut TIC</td>
+                        <td>2022</td>
+                        <td>2024</td>
+                    </tr>
+                    <tr>
+                        <td>Curs de Programació llenguatge JAVA per meu compte</td>
+                        <td>Codecademy</td>
+                        <td>2026</td>
+                        <td>2027</td>
+                    </tr>
+                </table>
+
+
+                <table class="projects-table">
+                    <caption><strong>PROJECTES</strong></caption>
+                    <tr>
+                        <th>Projecte</th>
+                        <th>Descripció</th>
+                        <th>Data d'inici </th>
+                    </tr>
+                    <tr>
+                        <td>Web d'Instagram</td>
+                        <td>Disseny i desenvolupament de la web oficial d'Instagram</td>
+                        <td>2028</td>
+                    </tr>
+                    <tr>
+                        <td>Aplicació per a Glovo</td>
+                        <td>Disseny d'una aplicació per a la gestió d'encàrrecs a Glovo</td>
+                        <td>2027</td>
+                    </tr>
+                    <tr>
+                        <td>Redisseny de Wallapop</td>
+                        <td>Millora de l'experiència d'usuari en la plataforma Wallapop</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Web Corporativa SEAT</td>
+                        <td>Desenvolupament de la pàgina web corporativa per a SEAT</td>
+                        <td>2021</td>
+
+                    </tr>
+</body>
+</html>

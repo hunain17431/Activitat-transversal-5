@@ -1,0 +1,150 @@
+body {
+    background-color: #000;
+    background-image: url('../imatges/fondos/pbreak.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+h1 {
+    color: rgb(0, 191, 255);
+    text-align: center ;
+    font-style: initial ;
+    font-weight: bold;
+    font-size: 100px;
+    position: absolute;
+    left: 90px;
+    top: 10px;
+    max-width: 300px;
+}
+
+h2 {
+    color: rgb(0, 191, 255);
+    text-align: center ;
+    font-style: initial ;
+    font-weight: bold;
+    font-size: 100px;
+    position: absolute;
+    left: 275px;
+    top: 17%;
+    max-width: 300px;
+}
+
+p {
+  color: gainsboro;
+  text-align:right;
+  margin-top: 275px;
+  margin-left: 100px;
+  margin-right: 800px;
+  text-align: justify;
+  line-height: 2.5;
+  font-family: 'Playfair Display', serif, Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bolder;
+  min-width: 300px
+}
+
+.segontext {
+    color:red;
+    text-align:right;
+    margin-top: 0px;
+    margin-left: 100px;
+    margin-right: 700px;
+    text-align: justify;
+    line-height: 1.5;
+    font-family: 'Playfair Display', serif, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.tercertext {
+    color: gainsboro;
+    text-align:right;
+    margin-top: 0%;
+    margin-left: 100px;
+    margin-right: 900px;
+    font-family: 'Playfair Display', serif, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.quarttext {
+    color: gainsboro;
+    text-align:right;
+    margin-top: 0%;
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-right: 900px;
+    font-family: 'Playfair Display', serif, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.ultimtext {
+    color: lightgoldenrodyellow;
+    text-align:right;
+    margin-top: 1%;
+    margin-left: 100px;
+    margin-bottom: 0;
+    margin-right: 900px;
+    font-family: 'Playfair Display', serif, Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 120;
+    margin: 50;
+    display: flex;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding : 12px;
+    text-align: center; 
+    background-color: black;
+    position: fixed ;
+    top: 0%;
+    width: 100%;
+    margin: 0%;
+    padding: 10px ; 
+    min-height: 10px;
+}
+        
+nav ul li {
+    margin-left: 25px;
+    margin-right: 150px;
+    min-width: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lightblue;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif, Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover {
+    background-color: navy;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav ul li a:active {
+    background-color: #005bb5;
+    color: white;
+}
+
+nav ul li a.active {
+    background-color: #005bb5;
+    color: white;
+}

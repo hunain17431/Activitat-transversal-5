@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari</title>
+    <link rel="stylesheet" href="CSS/formulari.css">
+    <script>
+        // JavaScript para mostrar el mensaje de agradecimiento
+        function mostrarAgradecimiento(event) {
+            event.preventDefault(); // Evita que el formulario se envíe de inmediato
+            // Muestra el mensaje de agradecimiento
+            document.getElementById("gracies-container").style.display = "block";
+            // Oculta el formulario
+            document.getElementById("formulari").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">MENÚ</a></li>
+            <li><a href="historia.html">HISTÒRIA</a></li>
+            <li><a href="cast.html">PERSONATGES</a></li>
+            <li><a href="season.html">TEMPORADES</a></li>
+            <li><a href="galeria.html">GALERIA</a></li>
+            <li><a href="nosaltres.html">NOSALTRES</a></li>
+            <li><a href="formulario.html">FORMULARI</a></li>
+        </ul>
+    </nav>
+
+    <h2>FORMULARI</h2>
+    <div class="formulari-container">
+        <form id="formulari" action="gracies.html" method="POST" onsubmit="mostrarAgradecimiento(event)">
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required>
+
+            <label for="correu">Correu electrònic:</label>
+            <input type="email" id="correu" name="correu" placeholder="Escriu el teu correu electrònic" required>
+
+            <label for="temporada">Temporada preferida:</label>
+            <select id="temporada" name="temporada" required>
+                <option value="" disabled selected>Selecciona una opció</option>
+                <option value="1">Primera temporada</option>
+                <option value="2">Segona temporada</option>
+                <option value="3">Tercera temporada</option>
+                <option value="4">Quarta temporada</option>
+                <option value="5">Cinquena temporada</option>
+            </select>
+
+            <label for="valoracio">Valoració (1 a 10):</label>
+            <input type="number" id="valoracio" name="valoracio" min="1" max="10" placeholder="Ex: 8" required>
+
+            <label for="personatge">Personatge preferit:</label>
+            <input type="text" id="personatge" name="personatge" placeholder="Escriu el teu personatge preferit" required>
+
+            <label for="escena">Escena preferida:</label>
+            <textarea id="escena" name="escena" rows="4" placeholder="Descriu breument la teva escena preferida"></textarea>
+
+            <label for="millora">Què milloraries de la sèrie?</label>
+            <textarea id="millora" name="millora" rows="3" placeholder="Comparteix la teva opinió"></textarea>
+
+            <label for="recomanar">Recomanaries la sèrie a altres persones?</label>
+            <div id="recomanar">
+                <input type="radio" id="si" name="recomanar" value="sí" checked required>
+                <label for="si">Sí</label>
+
+                <input type="radio" id="no" name="recomanar" value="no" required>
+                <label for="no">No</label>
+
+                <input type="radio" id="potser" name="recomanar" value="potser" required>
+                <label for="potser">Potser</label>
+            </div>
+
+            <label for="interessos">Quins són els teus interessos?</label>
+            <div id="interessos">
+                <input type="checkbox" id="opcio1" name="interessos" value="opcio1" checked>
+                <label for="opcio1">Acció</label>
+
+                <input type="checkbox" id="opcio2" name="interessos" value="opcio2">
+                <label for="opcio2">Drama</label>
+
+                <input type="checkbox" id="opcio3" name="interessos" value="opcio3">
+                <label for="opcio3">Comèdia</label>
+
+                <input type="checkbox" id="opcio4" name="interessos" value="opcio4">
+                <label for="opcio4">Misteri</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Mensaje de agradecimiento -->
+        <div id="gracies-container" style="display:none;">
+            <p>Gràcies per enviar el teu formulari! Hem rebut la teva informació correctament.</p>
+            <button onclick="window.history.back();">Tornar enrere</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Nosaltres</h3>
+                <p>Som un equip apassionat pel contingut audiovisual i ens dediquem a oferir informació de qualitat sobre sèries i pel·lícules.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Atenció al client</h3>
+                <p>Telèfon: 623 194 392</p>
+                <p>Correu: prisonbreakinfo@gmail.com</p>
+                <p>Instagram : PrisonBreakInfo</p>
+            </div>
+            <div class="footer-section">
+                <h3>Suport</h3>
+                <p>Preguntes freqüents</p>
+                <p>Política de privadesa</p>
+                <p>Condicions d'ús</p>
+            </div>
+            <div class="footer-section">
+                <h3>Més informació</h3>
+                <p>Blog oficial</p>
+                <p>Notícies</p>
+                <p>Comunitat de fans</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 PrisonBreakInfo. Tots els drets reservats.</p>
+        </div>
+    </footer>
+</body>
+</html>
